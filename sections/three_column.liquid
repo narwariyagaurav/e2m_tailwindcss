@@ -1,0 +1,44 @@
+<div class="page-width">
+  <div class="box_first">
+    <img src="{{ section.settings.image | img_url:'master' }}"/>
+    <div class="title_content">
+      {% if section.settings.title_txt != blank %}
+        <h3>{{section.settings.title_txt}}
+        </h3>
+      {% endif %}
+      <a href="{{section.settings.btn_link}}">{{ section.settings.btn_label }}
+      </a>
+    </div>
+
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Threebox Column",
+    "class": "threebox_column_cls",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      }, {
+        "type": "Text",
+        "id": "title_txt",
+        "label": "Title"
+      }, {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button Text"
+      }, {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Link"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Threebox Column"
+      }
+    ]
+  }
+{% endschema %}}}
