@@ -566,22 +566,19 @@ video {
   flex-wrap: wrap;
 }
 
+.justify-between {
+  justify-content: space-between;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.pt-\[\] {
-  padding-top: ;
-}
-
-.pt-\[30px\] {
-  padding-top: 30px;
-}
-
-.pt-\[50px\] {
-  padding-top: 50px;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .uppercase {

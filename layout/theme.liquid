@@ -41,10 +41,10 @@
     {{ content_for_header }}
 
     {%- liquid
-         assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
-         assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
-         assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
-       %}
+          assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+          assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+          assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+        %}
 
     {% style %}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}
@@ -330,7 +330,7 @@
     </script>
   </head>
 
-  <body class="gradient pt-[50px]">
+  <body class="gradient">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
